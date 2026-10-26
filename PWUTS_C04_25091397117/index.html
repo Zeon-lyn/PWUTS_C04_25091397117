@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light"><meta name="darkreader-lock">
+  <title>Dashboard — Kelola Kost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="app-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="#" data-page="dashboard"><span class="site-brand-mark"><i class="fa-solid fa-house-user"></i></span><span><strong>Kelola Kost</strong><small>Portal Penghuni</small></span></a>
+      <nav class="top-nav" aria-label="Menu utama">
+        <a class="nav-link active" href="#" data-page="dashboard">Dashboard</a>
+        <a class="nav-link" href="#" data-page="kamar">Informasi Kamar</a>
+        <a class="nav-link" href="#" data-page="pembayaran">Pembayaran</a>
+        <a class="nav-link" href="#" data-page="pengumuman">Pengumuman</a>
+        <a class="nav-link" href="#" data-page="keluhan">Keluhan</a>
+        <div class="more-wrap">
+          <button type="button" class="nav-link" id="moreBtn" aria-haspopup="true" aria-expanded="false">Lainnya <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="more-menu" id="moreMenu">
+            <a class="nav-link" href="#" data-page="profil"><i class="fa-regular fa-user"></i>Profil Saya</a>
+            <a class="nav-link" href="#" data-page="riwayat"><i class="fa-solid fa-clock-rotate-left"></i>Riwayat Pembayaran</a>
+            <a class="nav-link" href="#" data-page="berhenti"><i class="fa-solid fa-door-open"></i>Berhenti Ngekos</a>
+            <a class="nav-link logout-trigger" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+          </div>
+        </div>
+        <!-- Salinan untuk layar kecil (dropdown tidak dipakai di HP) -->
+        <a class="nav-link more-inline" href="#" data-page="profil">Profil Saya</a>
+        <a class="nav-link more-inline" href="#" data-page="riwayat">Riwayat Pembayaran</a>
+        <a class="nav-link more-inline" href="#" data-page="berhenti">Berhenti Ngekos</a>
+        <a class="nav-link more-inline logout-trigger" href="#">Logout</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-button" id="notificationBtn" aria-label="Notifikasi"><i class="fa-regular fa-bell"></i></button>
+        <div class="user-mini"><div class="avatar">AP</div><div><strong id="userName">Andi Pratama</strong><small id="userRoom">Kamar 103</small></div></div>
+      </div>
+    </div>
+  </header>
+  <main class="main-area">
+    <div class="content-area" id="main-content"></div>
+    <footer class="footer"><span>© 2026 Website Kelola Kost</span><span>Portal Penghuni · PHP &amp; MySQL</span></footer>
+  </main>
+</div>
+<div id="appToast" class="app-toast" role="status" aria-live="polite"><span id="toastMessage"></span><button type="button" id="toastClose" class="toast-close" aria-label="Tutup">×</button></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script><script src="js/keluhan.js"></script><script src="js/form-keluhan.js"></script>
+</body></html>
