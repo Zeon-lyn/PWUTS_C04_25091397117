@@ -1,0 +1,14 @@
+<section class="dash-head"><div><h1>Keluhan Saya</h1><p>Pantau laporan Anda dan tanggapan dari Owner.</p></div><button class="btn-primary-custom" data-page="form-keluhan"><i class="fa-solid fa-plus"></i>Ajukan Keluhan Baru</button></section>
+<div class="filter-bar">
+  <div class="tabs" role="group" aria-label="Filter status">
+    <button type="button" class="tab active" data-status="" aria-pressed="true">Semua<span class="tab-count">0</span></button>
+    <button type="button" class="tab" data-status="Menunggu Tanggapan" aria-pressed="false">Menunggu<span class="tab-count">0</span></button>
+    <button type="button" class="tab" data-status="Sedang Diproses" aria-pressed="false">Diproses<span class="tab-count">0</span></button>
+    <button type="button" class="tab" data-status="Selesai" aria-pressed="false">Selesai<span class="tab-count">0</span></button>
+  </div>
+  <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="complaintSearch" class="field-control" placeholder="Cari keluhan" aria-label="Cari keluhan"></div>
+</div>
+<div id="complaintList" class="complaint-list"></div>
+<div id="complaintEmpty" class="empty-state is-hidden"><i class="fa-regular fa-folder-open icon-block"></i><strong>Keluhan tidak ditemukan</strong><p>Coba ubah kata kunci atau filter status.</p></div>
+<p id="complaintCount" class="list-foot"></p>
+<div class="custom-modal-overlay is-hidden" id="complaintDetailModal" role="dialog" aria-modal="true" aria-labelledby="complaintDetailTitle"><div class="custom-modal-content"><div class="modal-header"><h2 class="modal-title" id="complaintDetailTitle">Detail Keluhan</h2><button type="button" class="modal-close" data-modal-close aria-label="Tutup">×</button></div><div class="modal-body" id="complaintDetailBody"></div><div class="modal-footer"><button class="btn-outline-custom" data-modal-close>Tutup</button></div></div></div>
